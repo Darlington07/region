@@ -1,0 +1,164 @@
+/* ==========================================
+   1. REINICIO Y CONFIGURACIÓN GENERAL (Box Model)
+   ========================================== */
+* {
+    box-sizing: border-box; /* El ancho incluye padding y borde */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   2. SELECTORES DE ETIQUETA
+   ========================================== */
+header {
+    width: 100%;
+    background-color: #1b5e20; /* Formato Hexadecimal */
+    background-image: url("../img/el-municipio-se-puede.jpg"); /* Ruta relativa desde la carpeta css/ */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px; /* Arriba, derecha, abajo, izquierda */
+    margin: 0;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none; /* Quita las viñetas del menú */
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+aside {
+    width: 25%;
+    padding: 20px;
+    border-left: 5px solid #1b5e20;
+    /* Margen con abreviación de 4 valores: arriba, derecha, abajo, izquierda */
+    margin: 0px 0px 20px 0px; 
+    background-color: #fafafa;
+}
+
+footer {
+    width: 100%;
+    /* Padding de 2 valores: vertical y horizontal */
+    padding: 20px 40px; 
+    border-top: 3px solid #1b5e20;
+    /* Margen superior de 30px usando abreviación de 4 valores */
+    margin: 30px 0px 0px 0px; 
+    color: white;
+    background-color: #1b5e20;
+}
+
+h1, h2, p {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li a {
+    color: hsl(200, 60%, 40%); /* Formato HSL exigido */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: rgb(255, 193, 7); /* Cambio de color con RGB al pasar el mouse */
+}
+
+/* ==========================================
+   3. SELECTORES DE CLASE OBLIGATORIOS
+   ========================================== */
+
+/* Controla el ancho del logo */
+.logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Muestra los enlaces del nav en una sola fila */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Organiza las 3 tarjetas una al lado de la otra */
+.contenedor-tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Fondo, borde y espaciado de cada tarjeta */
+.tarjeta {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    /* Margen abreviado de 4 valores */
+    margin: 10px 0px 10px 0px; 
+    /* RGBA con transparencia para sombra */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    border-radius: 6px;
+}
+
+/* Estilo base del botón */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255, 193, 7); /* Formato RGB exigido */
+    color: #333333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(255, 160, 0);
+}
+
+/* Botón secundario exigido por la rúbrica */
+.btn-secundario {
+    background-color: transparent;
+    border: 2px solid rgb(255, 193, 7);
+    color: #1b5e20;
+}
+
+.btn-secundario:hover {
+    background-color: rgb(255, 193, 7);
+    color: #ffffff;
+}
+
+/* Resaltar texto con color */
+.destacado {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
